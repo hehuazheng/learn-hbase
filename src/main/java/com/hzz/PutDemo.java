@@ -9,10 +9,12 @@ import org.apache.hadoop.hbase.util.Bytes;
 
 import java.io.IOException;
 
-/**
- * Created by hejf on 2017/2/7.
- */
 public class PutDemo {
+    /**
+     *
+     * @param args
+     * @throws IOException
+     */
     public static void main(String[] args) throws IOException {
         String version = args[0];
         String value = args[1];
