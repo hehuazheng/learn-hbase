@@ -17,7 +17,7 @@ public class BatchModeDemo {
         System.out.println("delete column");
         delete.addColumn(Bytes.toBytes("cf"), Bytes.toBytes("b"));
         Put put = new Put(Bytes.toBytes("row1"));
-        put.addColumn(Bytes.toBytes("cf"), Bytes.toBytes("a"), Bytes.toBytes("hello"));
+        put.addColumn(Bytes.toBytes("data"), Bytes.toBytes("a"), Bytes.toBytes("hello"));
         list.add(put);
         Object[] objs = new Object[list.size()];
         table.batch(list, objs);
